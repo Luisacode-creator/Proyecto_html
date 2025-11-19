@@ -1,0 +1,781 @@
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+*_*_*_*_*_*_**_*_*_*_*_*_*_*_*_*_*_*_*_*_ESTILOS GENERALES_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*  
+_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+
+*{ 
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: "mio";
+    src: url(../assets/fonts/Railey-PersonalUse.ttf);
+}
+
+:root { 
+    --color1:#A9D8FF;
+    --color2:#b3cfff; 
+    --color3:#C3BFFF; 
+    --color4:#B9AFFF;
+    --box:rgb(165, 165, 165);
+    --box2: rgb(182, 180, 180); 
+    --scroll: rgb(95, 95, 95);
+    --main:#d4cdf7; 
+    --fuentetextos: Verdana, Geneva, Tahoma, sans-serif; /*fuente de los textos y algunos h2 y h3*/
+    --titlecolor:white; 
+    
+
+}
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_
+*_*_*_*_*_*_**_*_*_*_*_*_*_*_*_*_*_*_*_*_ESTILOS INDEX_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_* 
+_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+
+
+/*===============================================================================================================
+                                   ✨Estos serán los estilos del header✨
+ ================================================================================================================ */
+.logo { 
+    width:150px;
+    height:20vh ;
+    margin:0;
+ }
+ 
+ .h1header { 
+    margin-left:2vw; 
+    margin-top:2vw;
+    font-family: "mio";
+    font-size:80px; 
+    word-spacing: 5px; 
+ }
+
+ 
+header{ 
+    width: 100%;
+    background:linear-gradient(to right, var(--color1), var(--color2), var(--color3), var(--color4) ); 
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px;
+    color: var(--titlecolor);
+}
+/*===============================================================================================================
+                            ✨Estos serán los estilos de la barra de navegación✨
+ ================================================================================================================ */
+
+
+nav { 
+    width:100%; 
+    height:auto; 
+    background:radial-gradient(var(--color1), var(--color4)); 
+    display:flex;  
+   
+}
+
+#shopping-cart{  
+    width: 50px;
+    height: 35px;  
+}
+
+
+ul { 
+    width: 100%;
+    display:flex; 
+    justify-content:space-around; 
+   
+}
+ul> li, a { 
+    text-transform: uppercase;
+    list-style:none; 
+    text-decoration:none; 
+    padding:10px; 
+    display:inline-block;
+    color:var(--titlecolor); 
+    margin-left: 60px;
+}
+ul>li>a:hover { 
+    color:black; 
+    background-color: var(--color1);
+
+}
+
+
+.in:visited {   /*con esto el usuario navegará por las distintas páginas, pero sabiendo siempre en la que se encuentra*/
+    color: black; 
+}
+
+.check-nav{ 
+    display:none; 
+}
+.label-check-nav{ 
+    display:none;
+}
+
+
+
+/*==============================================================================================================
+                    ✨Estos serán los estilos del main donde estaran todos mis div's✨
+ ============================================================================================================ */
+
+main {
+    width: 100%;
+    background-color:var(--main); 
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr 300px;
+    grid-template-rows: 300px 300px;
+    gap:20px; 
+    
+
+}
+
+.background1{ 
+    background-color: var(--box);
+    margin:20px; 
+    grid-column: 1/2;
+    grid-row: 1; 
+}
+
+.background2{ 
+    background-color: var(--box);
+    margin:20px; 
+    grid-column: 2/4;
+    grid-row: 1;
+    display:flex;
+    flex-direction: row;
+    border: 3px solid var(--color2); 
+    
+}
+
+.background3{ 
+    background-color: var(--box);
+    margin:20px; 
+    grid-column: 4/5;
+    grid-row:1; 
+    overflow-y: hidden;
+}
+
+.background4{ 
+    background-color: var(--box);
+    margin:20px; 
+    grid-column: 1/3;
+    grid-row:2;
+    padding:10px;
+    
+}
+
+.background5{ 
+    background-color: var(--box);
+    margin:20px; 
+    grid-column: 3/5;
+    grid-row:2; 
+    
+}
+
+/*----- BOX NEWS AND CURIOSITIES--------*/
+.news { 
+    width: 100%;
+}
+
+#news { 
+    width:100%;
+    height: 100%;
+}
+
+.curiosities, .news{ 
+    font-family:var(--fuentetextos);
+    font-size: 15px;
+    width:auto;
+    height: 65%;
+    text-align: center;
+    background-color:var(--box2); 
+    margin:10px;
+
+}
+.curiosities { 
+    overflow-y:scroll;
+}
+
+.curiosities::-webkit-scrollbar { 
+    background-color:var(--box2);
+    width: 10px;
+    border-radius: 10%;
+    
+}
+.curiosities::-webkit-scrollbar-thumb { 
+    background-color:var(--scroll);
+    border-radius: 10px;
+}
+
+
+.p1, .p3, .p4, .p5{ 
+    font-family:"mio"; 
+    font-size: 40px;
+    text-align: center;
+    color:var(--titlecolor);
+    margin:10px 10px 0 10px;
+    background:radial-gradient(var(--color1), var(--color4));
+    height: auto;
+}
+
+/*-----------------------BOX BIOGRAPHY------------------------*/
+
+.p2 { 
+    width:30%;
+    margin:20px 0 20px 20px;
+    text-align: center; 
+    overflow-y: scroll;
+    font-family:var(--fuentetextos);
+    font-size: 15px;
+    
+}
+.p2::-webkit-scrollbar { 
+    background-color:var(--box2);
+    width: 10px;
+    
+    
+}
+.p2::-webkit-scrollbar-thumb { 
+    background-color:var(--scroll);
+    border-radius: 10px;
+}
+
+.bold0 { 
+    font-weight: bold;
+    display:block;
+    text-align: center;
+    color:var(--titlecolor);
+   
+}
+
+.biography { 
+    width:70%;
+    padding:20px 20px 20px 0;
+
+    
+}
+#biography { 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:top center;
+   
+    
+}
+
+/*------------------BOX POPULAR------------------*/
+
+.images, .newthings{ 
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+ 
+.popular>a { 
+    margin:10px 10px 0 10px;
+    width: 150px; 
+    height: 140px;
+}
+.popular{ 
+    display:flex; 
+    flex-direction: column;  /*poner el texto debajo de la imagen y centrado*/
+    align-items: center;
+    width: 30%;
+
+    
+}
+.size, .newthing1, .newthing2 { 
+    width: 150px;
+    height:150px;
+    border: 2px solid var(--color2); 
+}
+
+
+/*--------------------BOX NEWTHINGS-------------------*/
+
+.newthing { 
+    padding:20px; 
+    display:flex;
+    flex-direction: row-reverse; 
+    width: 100%;
+}
+
+.np1, .np2{ 
+    font-family:var(--fuentetextos); 
+    font-size:15px; 
+    max-width: 100%;
+    height: 140px;
+    overflow-y: scroll;
+    text-align: center;
+    
+}
+
+.np1::-webkit-scrollbar { 
+    background-color:var(--box2);
+    width: 10px;
+}
+
+
+.np1::-webkit-scrollbar-thumb { 
+    background-color:var(--scroll);
+    border-radius: 10px;
+}
+.np2::-webkit-scrollbar { 
+    background-color:var(--box2);
+    width: 10px;
+}
+
+
+.np2::-webkit-scrollbar-thumb { 
+    background-color:var(--scroll);
+    border-radius: 10px;
+}
+.bold { 
+    font-weight: bold;
+    color:var(--titlecolor);
+}
+
+
+/*==============================================================================================================
+                                  ✨Estos serán los estilos del footer✨
+ ============================================================================================================ */
+
+footer { 
+    width: 100%;
+    background:radial-gradient(var(--color1), var(--color2), var(--color3), var(--color4) );
+    display:flex; 
+    justify-content:center;
+    
+    
+}
+.symbols{ 
+    width: 30px;
+    height: 30px;
+    margin:10px;
+}
+
+.part-right, .part-left { 
+    display:flex;
+    padding:30px;
+    align-items: center;
+
+}
+
+
+
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_
+*_*_*_*_*_*_**_*_*_*_*_*_*_*_*_*_*_*_*_*_ESTILOS CONTACTO_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*  
+_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+
+.maincontact { 
+    display:flex; 
+    background-color:var(--main); 
+    width: 100%;
+    padding:50px; 
+}
+
+.map,.contact{
+    width:auto; 
+}
+.map { 
+    margin-top:30px; 
+}
+.contact>h1 { 
+    text-align:center; 
+    font-family: "mio";
+    font-size: 30px;
+    padding:40px; 
+    text-decoration:underline;
+    color:var(--titlecolor); 
+    
+}
+.contact>h2 { 
+    text-indent: 20px;
+    font-family: var(--fuentetextos);
+    font-size: 20px;
+    color: var(--titlecolor);
+    
+}
+.contact>h3 { 
+    text-indent: 40px;
+    font-family: var(--fuentetextos);
+    font-size: 15px;
+    padding:10px;
+    color:var(--titlecolor);
+}
+.imagemap{ 
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_
+*_*_*_*_*_*_**_*_*_*_*_*_*_*_*_*_*_*_*_*_ESTILOS PRESUPUESTO_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*  
+_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+.mainbudget{ 
+    background-color:var(--main); 
+    width: 100%;
+    display:flex;
+    flex:1; 
+    justify-content: center;
+    align-items: center;
+    padding:20px; 
+
+}
+label { 
+    font-family: var(--fuentetextos);
+    font-size: 15px;
+}
+
+.form{ 
+    width:50%; 
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    background-color: var(--box2);
+    border-radius: 30px;
+}
+.form>h1 { 
+    font-family: "mio";
+    font-size: 30px;
+    display:flex; 
+    justify-content: center;
+    padding:20px;
+    margin-bottom: 3px;
+    text-decoration: underline;
+}
+
+.final-part { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox-container { 
+    display:flex;
+}
+
+.buttons {
+    margin:10px;
+}
+
+.pcheckbox { 
+    font-size: 15px;
+    font-family: var(--fuentetextos);
+}
+
+.boxname, .boximail,.boxtel,.boxinformation { 
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+
+}
+#name, #imail, #tel, #information { 
+   width:100%; 
+   height: 40px;
+   background-color: var(--box2);
+   border:2px solid  white;
+   border-radius: 5px;
+   margin-top:10px;
+   padding-left: 10px;
+   
+
+}
+#information{ 
+    width: 100%;
+    height: 50px;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+    resize: none;
+    
+}
+.form>h1 { 
+    color:var(--titlecolor);
+}
+
+label::first-letter{ 
+    font-family: "mio";
+}
+input::placeholder { 
+    color:var(--titlecolor);
+}
+
+
+
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_
+*_*_*_*_*_*_**_*_*_*_*_*_*_*_*_*_*_*_*_*_ESTILOS PRODUCTOS_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*  
+_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+.mainproduct>.img-1 >img { 
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+.mainproduct { 
+    background-color: var(--main);
+    display:grid; 
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    gap:15px; 
+    padding:10px; 
+}
+
+.img-1{ 
+    display: grid;
+   /* grid-template-rows: 70% 30%;*/
+    text-align: center;
+    background-color: var(--box);
+    padding:10px; 
+}
+
+.description { 
+    background-color: var(--titlecolor);
+    font-family: var(--fuentetextos);
+    margin-top:10px;
+    font-size: 15px;
+    text-align: center;
+    padding:10px; 
+}
+
+.description::before{ 
+    content:"✨";
+}
+.description::after{ 
+    content:"✨";
+}
+
+
+/*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_
+*_*_*_*_*_*_**_*_*_*_*_*_*_*_*_*_*_*_*_*_MEDIDA_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*  
+_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*__*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*/
+ 
+
+        /*MEDIDAS PARA LAS TABLETS Y MÓVILES*/
+
+
+@media screen and (max-width:1024px){ 
+
+   /* crearé un menú hamburguesa para los dos tipos de medidas*/
+/*HEADER*/
+.logo { 
+    width:60px;
+ }
+ 
+ .h1header { 
+    font-size:60px; 
+ }
+header { 
+    justify-content: center;
+}
+
+ /*BARRA DE NAVEGACIÓN*/
+ nav { 
+    display:flex; 
+    justify-content: center;
+ }
+
+#shopping-cart { 
+    display:none;
+}
+.menu { 
+    width:90px; 
+    height:90px; 
+    align-items: center;
+}
+.label-check-nav { 
+    display:block; 
+
+}
+.links{ 
+    display:none; 
+    flex-direction: column;
+    position:absolute;
+    margin-top:90px;
+    width:100%; 
+    background-color: var(--color2); 
+}
+
+nav li a { 
+    display:flex; 
+    justify-content: center;
+    align-items:center; 
+    padding:10px;
+}
+ul>li, a  { 
+    margin-left:0px;
+}
+nav li a:hover { 
+    background-color: var(--box2);
+}
+
+.check-nav:checked + .links { 
+    display:flex; 
+}
+
+.shopping-cart-link{ 
+    display:none;
+}
+
+
+/*MAIN*/
+main,.mainproduct, .mainbudget { 
+    display:flex; 
+    flex-direction: column;
+}
+
+.background1 { 
+    display:none; 
+}
+
+.maincontact { 
+    display:flex; 
+    flex-direction:column-reverse;
+    justify-content: center;
+    justify-items: center;
+}
+
+.np1, .np2,.p2{ 
+    font-size:15px; 
+    text-align: center;
+    overflow-y: scroll;
+ }
+ .curiosities { 
+    display:block; 
+    height: 70%;
+ }
+
+
+ .p1,.p3, .p4, .p5 { 
+    display:flex; 
+    justify-content: center;
+    justify-items: center;
+    height: 20%;
+ }
+.background2,.background3 { 
+    height: 400px;
+}
+.background5 { 
+    height: 300px;
+}
+
+.newthing1, .newthing2, .np1, .np2 { 
+    height: 200px;
+}
+.popular{ 
+    height: 200px;
+}
+
+}
+
+/*Voy a crear algunas especificaciones solo para móviles, sobre todo de tamaño*/
+
+@media screen and (max-width:767px) { 
+
+.logo { 
+  width:40px;
+}
+     
+.h1header { 
+  font-size:30px; 
+}  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
